@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+    background-color: cadetblue;
+    padding: 10px;
+}
+.contenido{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    gap: 25px;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .titulo{
+        text-align: center;
+    }
+    .formulario-fechas{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        fieldset{
+            flex: 1 1 100px;
+        }
+    }
+    .desactivado{
+        border: 1px solid rgb(109, 109, 109);
+        color: rgb(109, 109, 109);
+    }
+    fieldset{
+        border-radius: 5px;
+        border: 1px solid black;
+        legend{
+            margin-left: 5px;
+            padding: 0px 5px;
+            user-select: none;
+        }
+        label{
+            padding: 0px 5px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            input{
+                flex: 1;
+                padding: 5px 0px;
+                border: none;
+                outline: none;
+                background-color: transparent;
+                font-size: 16px;
+                min-width: 0px;
+                width: 100%;
+            }
+        }
+        
+        
+    }
+    button{
+        padding: 5px;
+        border: none;
+        outline: none;
+        background-color: rgb(0, 140, 255);
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.resultados{
+    display: flex;
+    .resultado-item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .resultado-label{
+            font-size: 20px;
+        }
+        .resultado-valor{
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .ganancia{
+            color: green;
+        }
+        .capital{
+            color: chocolate;
+        }
+    }
+}
+
+.error{
+    color: red;
+}

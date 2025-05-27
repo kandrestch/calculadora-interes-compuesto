@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="contenido">
+            <section class="formulario">
+                <h1 class="titulo">Calculadora de interés compuesto</h1>
+                <div class="formulario-fechas">
+                    <fieldset>
+                        <legend>Fecha Inicio</legend>
+                        <label for="fecha_inicio">
+                            <input type="date" id="fecha_inicio" value="2023-01-23">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Fecha Fin</legend>
+                        <label for="">
+                            <input type="date" id="fecha_fin" value="2025-06-25">
+                        </label>
+                    </fieldset>
+                </div>
+
+                <fieldset>
+                    <legend>Capital inicial</legend>
+                    <label for="capital_inicial">
+                        <span>S/</span>
+                        <input type="number" id="capital_inicial" min="0" value="5000">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tasa de interés</legend>
+                    <label for="tasa_interes">
+                        <input type="number" id="tasa_interes" min="0" value="2.5">
+                        <span> %</span>
+                    </label>
+                </fieldset>
+                <fieldset class="desactivado">
+                    <legend>Meses</legend>
+                    <label for="meses">
+                        <input type="number" id="meses" disabled>
+                    </label>
+                </fieldset>
+            
+                <button id="btn_calcular">Calcular</button>
+
+            </section>
+            
+            <section class="resultados">
+                <div class="resultado-item">
+                    <span class="resultado-label">Ganancia total</span>
+                    <span class="resultado-valor ganancia">S/ -</span>
+                </div>
+                <div class="resultado-item">
+                    <span class="resultado-label">Capital final</span>
+                    <span class="resultado-valor capital">S/ -</span>
+                </div>
+            </section>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
